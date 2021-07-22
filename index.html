@@ -5,9 +5,10 @@
 <body style="background-color:black;">
 </head>
 <body>
-
-<h1 style="font-family:arial;color:white;text-align:center;">Estimated increase in potential number of jobs</h1>
-<div id="piechart"></div>
+<div class="pieChartDiv">
+  <h1 style="font-family:arial;color:white;text-align:center;">Estimated increase in potential number of jobs</h1>
+  <div id="piechart"></div>
+</div>
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
 <script type="text/javascript">
@@ -35,6 +36,11 @@ function drawChart() {
   chart.draw(data, options);
 }
 </script>
-
+<style>
+  .pieChartDiv {
+    height: 100vh;
+    overflow: hidden;
+  }
+</style>
 </body>
 </html>
